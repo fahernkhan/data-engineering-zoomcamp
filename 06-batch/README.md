@@ -19,8 +19,6 @@ Follow [these instructions](setup/) to install Spark:
 * [Linux](setup/linux.md)
 * [MacOS](setup/macos.md)
 
-And follow [this](setup/pyspark.md) to run PySpark in Jupyter
-
 * :movie_camera: 6.2.1 (Optional) Installing Spark (Linux)
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/hqUbB9c8sKg)](https://youtu.be/hqUbB9c8sKg&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=53)
@@ -124,6 +122,7 @@ Script to prepare the Dataset [download_data.sh](code/download_data.sh)
 * [2025 Notes by Gabi Fonseca](https://github.com/fonsecagabriella/data_engineering/blob/main/05_batch_processing/00_notes.md)
 * [2025 Notes on Installing Spark on MacOS (with Anaconda + brew) by Gabi Fonseca](https://github.com/fonsecagabriella/data_engineering/blob/main/05_batch_processing/01_env_setup.md)
 * [2025 Notes by Daniel Lachner](https://github.com/mossdet/dlp_data_eng/blob/main/Notes/05_01_Batch_Processing_Spark_GCP.pdf)
+* [2026 Notes by Ajay Katte](https://github.com/mushroomsandchai/dtdez/tree/main/06_batch_processing/notes)
 * Add your notes here (above this line)
 
 </details>
