@@ -1,0 +1,25 @@
+name: nyc_raw.trips
+type: ingestr
+
+connection: duckdb-default
+
+parameters:
+  source_connection: duckdb-default
+  source_format: parquet
+  source_uri: "https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-01.parquet"
+  destination_table: raw_trips
+
+columns:
+  - name: pickup_datetime
+    type: timestamp
+    checks:
+      - name: not_null
+
+  - name: dropoff_datetime
+    type: timestamp
+
+  - name: passenger_count
+    type: integer
+
+  - name: trip_distance
+    type: double

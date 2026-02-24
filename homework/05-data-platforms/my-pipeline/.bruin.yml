@@ -1,0 +1,8 @@
+default_environment: dev
+
+environments:
+  dev:
+    connections:
+      duckdb:
+        - name: "duckdb-default"
+          path: "./duckdb.db"
