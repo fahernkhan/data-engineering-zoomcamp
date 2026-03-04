@@ -77,6 +77,7 @@ logs/
 data/
 *.parquet
 *.csv
+<<<<<<< HEAD
 .duckdb
 
 # exception: keep this specific file even though we ignore data/ (negation must come AFTER data/)
@@ -115,3 +116,6 @@ serving_dir
 # - Aku mempertahankan semua baris credential yang kamu masukkan (google_credentials.json, profiles.yml, dan path absolut).
 # - Jika ingin mengecualikan file .json tertentu dari ignore, tambahkan negation (!) di bawah pola *.json.
 # - Kalau mau commit uv.lock, hapus atau komentari baris "uv.lock" di atas sebelum commit.
+=======
+*.duckdb
+>>>>>>> 69ac907 (Add .duckdb to .gitignore)
