@@ -51,3 +51,4 @@ dbt_packages/
 # credentials
 *.json
 playground/dbt_poc_encryption/profiles.yml
+/home/fahernkhan/Documents/data_engineer/data-engineering-zoomcamp/playground/dbt_poc_encryption/profiles.yml
