@@ -1,0 +1,29 @@
+[0m14:11:30.414302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D22F8C190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D26771E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D26771850>]}
+
+
+============================== 14:11:30.422821 | 3631b818-a56b-4e89-8c3a-e4690dc7af98 ==============================
+[0m14:11:30.422821 [info ] [MainThread]: Running with dbt=1.11.6
+[0m14:11:30.431386 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init dbt_poc_encryption', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:11:30.628455 [debug] [MainThread]: Starter project path: C:\Users\Lenovo\Documents\de-learn\data-engineering-zoomcamp\playground\.venv\Lib\site-packages\dbt\include\starter_project
+[0m14:11:30.720587 [info ] [MainThread]: 
+Your new dbt project "dbt_poc_encryption" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:11:30.725756 [info ] [MainThread]: Setting up your profile.
+[0m14:13:54.018539 [info ] [MainThread]: Profile dbt_poc_encryption written to C:\Users\Lenovo\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:13:54.026774 [debug] [MainThread]: Command `dbt init` succeeded at 14:13:54.026774 after 143.77 seconds
+[0m14:13:54.026774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D1FD70D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D267D7B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011D1FCE3910>]}
+[0m14:13:54.026774 [debug] [MainThread]: Flushing usage events
+[0m14:13:55.534497 [debug] [MainThread]: An error was encountered while trying to flush usage events
