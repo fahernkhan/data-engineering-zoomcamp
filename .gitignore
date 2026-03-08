@@ -1,151 +1,117 @@
-
+# -----------------------
+# OS / Editor / IDE
+# -----------------------
+# macOS
 .DS_Store
-.idea
+
+# Windows thumbnail cache
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# shell / history
+.history
+
+# Jupyter
+.ipynb_checkpoints/
+
+# -----------------------
+# Terraform
+# -----------------------
+# state files & folders
 *.tfstate
 *.tfstate.*
-**.terraform
-**.terraform.lock.*
-**google_credentials.json
-**logs/
-**.env
-**__pycache__/
-.history
-**/ny_taxi_postgres_data/*
-serving_dir
-.ipynb_checkpoints/
-!week_6_stream_processing/avro_example/data/rides.csv
-*.parquet
-*.csv
-data/
-.duckdb
+.terraform/
+.terraform.lock.*
 
-# python
+# -----------------------
+# Python
+# -----------------------
+# virtual envs
 .venv/
 venv/
-__pycache__/
-*.pyc
 
-# logs
-logs/
-*.log
-
-# credentials
-*.json
-!package.json
-!package-lock.json
-
-# dbt profiles (contains credentials)
-playground/dbt_poc_encryption/profiles.yml
-recovered_files/
-
-# python
-.venv/
-__pycache__/
-*.pyc
-
-# dbt
-target/
-logs/
-dbt_packages/
-
-# credentials
-*.json
-playground/dbt_poc_encryption/profiles.yml
-/home/fahernkhan/Documents/data_engineer/data-engineering-zoomcamp/playground/dbt_poc_encryption/profiles.yml
-
-##uv
-# Python
+# bytecode / cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environment
-.venv/
+# pip/uv/poetry lock
+# catatan: biasanya commit lock file; hapus/komentari baris ini jika kamu ingin COMMIT uv.lock
+uv.lock          
 
-# Environment variables
+# -----------------------
+# Environment / Secrets
+# -----------------------
+# dotenv files (may contain secrets)
 .env
+# environment files (contains secrets)
+.env.*           
 
-# OS
-.DS_Store
-Thumbs.db
 
-# IDE
-.vscode/
-.idea/
+# generic json credentials (IGNORE all .json — exceptions below)
+*.json
+!package.json
+!package-lock.json
 
+# specific credential files (KEEP THESE as-is because you said penting)
+**google_credentials.json
+playground/dbt_poc_encryption/profiles.yml
+/home/fahernkhan/Documents/data_engineer/data-engineering-zoomcamp/playground/dbt_poc_encryption/profiles.yml
+
+# NOTE: jangan hapus atau ubah baris credential di atas tanpa sengaja
+
+# -----------------------
 # Logs
+# -----------------------
+logs/
 *.log
 
-##apache spark
-# Python cache
-__pycache__/
-*.pyc
-
-# virtual environment
-.venv/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Spark binary
-spark-*.tgz
-spark/
-
-# data files
-*.parquet
-data/
-
-# logs
-*.log
-# Python
-__pycache__/
-*.pyc
-
-# virtual env
-.venv/
-
-# uv / poetry
-uv.lock
-# keep uv.lock? (biasanya commit lock, tapi .venv ignore)
-# jika mau commit lock, hapus uv.lock dari sini
-
-# data
+# -----------------------
+# Data files / DB
+# -----------------------
+# ignore datasets and common output formats
 data/
 *.parquet
+*.csv
+.duckdb
 
-# spark
+# exception: keep this specific file even though we ignore data/ (negation must come AFTER data/)
+!week_6_stream_processing/avro_example/data/rides.csv
+
+# other project-specific data folders (keep pattern as provided)
+**/ny_taxi_postgres_data/*
+
+# -----------------------
+# Spark / Big Data artifacts
+# -----------------------
+# spark binary / downloads
+spark-*.tgz
 spark/
-spark-*.tgz
-
-# OS & IDE
-.DS_Store
-.vscode/
-.idea/
-
-# large binaries
-spark-*.tgz
-
-# data files
-data/
-
-# spark output
-yellow_2025_11_repart4/
-
-# python cache
-__pycache__/
-*.pyc
-
-# virtual environment
-.venv/
-
-# spark temp
 spark-warehouse/
 
-# system
-.DS_Store
+# spark output (partitioned parquet, etc)
+yellow_2025_11_repart4/
+
+# -----------------------
+# DBT
+# -----------------------
+target/
+dbt_packages/
+recovered_files/
+playground/dbt_poc_encryption/profiles.yml   # (already listed above; kept for visibility)
+
+# -----------------------
+# Misc / custom
+# -----------------------
+serving_dir
+
+# -----------------------
+# Final notes (comments only)
+# -----------------------
+# - Aku mempertahankan semua baris credential yang kamu masukkan (google_credentials.json, profiles.yml, dan path absolut).
+# - Jika ingin mengecualikan file .json tertentu dari ignore, tambahkan negation (!) di bawah pola *.json.
+# - Kalau mau commit uv.lock, hapus atau komentari baris "uv.lock" di atas sebelum commit.
