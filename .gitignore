@@ -52,3 +52,100 @@ dbt_packages/
 *.json
 playground/dbt_poc_encryption/profiles.yml
 /home/fahernkhan/Documents/data_engineer/data-engineering-zoomcamp/playground/dbt_poc_encryption/profiles.yml
+
+##uv
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+##apache spark
+# Python cache
+__pycache__/
+*.pyc
+
+# virtual environment
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Spark binary
+spark-*.tgz
+spark/
+
+# data files
+*.parquet
+data/
+
+# logs
+*.log
+# Python
+__pycache__/
+*.pyc
+
+# virtual env
+.venv/
+
+# uv / poetry
+uv.lock
+# keep uv.lock? (biasanya commit lock, tapi .venv ignore)
+# jika mau commit lock, hapus uv.lock dari sini
+
+# data
+data/
+*.parquet
+
+# spark
+spark/
+spark-*.tgz
+
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
+
+# large binaries
+spark-*.tgz
+
+# data files
+data/
+
+# spark output
+yellow_2025_11_repart4/
+
+# python cache
+__pycache__/
+*.pyc
+
+# virtual environment
+.venv/
+
+# spark temp
+spark-warehouse/
+
+# system
+.DS_Store
