@@ -1,14 +1,10 @@
 [project]
 name = "06-batch"
 version = "0.1.0"
-description = "Batch processing homework using Apache Spark (Data Engineering Zoomcamp 2026)"
+description = "Batch processing homework using Apache Spark"
 readme = "README.md"
 requires-python = ">=3.10"
 
 dependencies = [
     "pyspark>=4.1.1"
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
