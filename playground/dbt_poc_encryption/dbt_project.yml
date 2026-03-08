@@ -1,0 +1,14 @@
+name: "dbt_poc_encryption"
+version: "1.0"
+config-version: 2
+
+profile: "poc_encryption"
+
+model-paths: ["models"]
+
+models:
+  dbt_poc_encryption:
+    +staging:
+      +materialized: view
+    +marts:
+      +materialized: incremental

@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: poc_users_incremental
+    description: "Incremental users table (encrypted input)."
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: encrypted_email
+        tests:
+          - not_null
+
+  - name: poc_users_decrypted_report
+    columns:
+      - name: email_plain
+        tests:
+          - not_null
