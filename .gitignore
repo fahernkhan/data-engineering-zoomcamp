@@ -33,3 +33,7 @@ logs/
 *.json
 !package.json
 !package-lock.json
+
+# dbt profiles (contains credentials)
+playground/dbt_poc_encryption/profiles.yml
+recovered_files/

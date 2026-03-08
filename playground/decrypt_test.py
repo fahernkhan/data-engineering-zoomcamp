@@ -2,7 +2,7 @@ from google.cloud import bigquery
 from google.oauth2 import service_account
 
 credentials = service_account.Credentials.from_service_account_file(
-    r"fathur-project-488913-6fdfbec23bce.json"
+    r"service_account.json"
 )
 
 client = bigquery.Client(

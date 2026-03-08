@@ -6,7 +6,7 @@ poc_encryption:
       method: service-account
       project: fathur-project-488913
       dataset: l2_poc            # dbt default target dataset (l2)
-      keyfile: C:\Users\Lenovo\Documents\de-learn\data-engineering-zoomcamp\playground\fathur-project-488913-6fdfbec23bce.json
+      keyfile: C:\Users\Lenovo\Documents\de-learn\data-engineering-zoomcamp\playground\service_account.json
       threads: 4
       location: asia-southeast2
       priority: interactive
