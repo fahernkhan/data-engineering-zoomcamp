@@ -37,3 +37,17 @@ logs/
 # dbt profiles (contains credentials)
 playground/dbt_poc_encryption/profiles.yml
 recovered_files/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# dbt
+target/
+logs/
+dbt_packages/
+
+# credentials
+*.json
+playground/dbt_poc_encryption/profiles.yml
